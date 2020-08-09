@@ -1,0 +1,15 @@
+{
+  "dockerImageBuilder": "cimg/base:stable-20.04",
+  "inputs": [
+    {
+      "label": "Install Homebrew and its packages? ",
+      "name": "HOMEBREW",
+      "type": "bool",
+      "items": [
+        "true",
+        "false"
+      ],
+      "default": "true"
+    }
+  ]
+}
