@@ -10,6 +10,16 @@
         "false"
       ],
       "default": "true"
-    }
+    },
+    {
+      "label": "Install Powerlevel10k terminal? ",
+      "name": "TERMINAL",
+      "type": "bool",
+      "items": [
+        "true",
+        "false"
+      ],
+      "default": "true"
+    },
   ]
 }
