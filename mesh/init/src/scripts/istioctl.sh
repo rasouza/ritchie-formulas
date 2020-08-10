@@ -1,4 +1,4 @@
-runIstio() {
+runIstioctl() {
     if [ $1 = "yes" ]; then
         echo "Istioctl installation..."
         ISTIO_VERSION=$(curl -L -s https://api.github.com/repos/istio/istio/releases | \

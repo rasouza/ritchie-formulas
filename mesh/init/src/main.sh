@@ -8,5 +8,5 @@
 
 runMinikube $MINIKUBE
 runMinikubeConfig $MINIKUBE_CONFIG
-runIstio $ISTIOCTL
+runIstioctl $ISTIOCTL
 runKustomize $KUSTOMIZE

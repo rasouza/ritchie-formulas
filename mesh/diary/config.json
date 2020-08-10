@@ -8,7 +8,7 @@
         "qty": 6
       },
       "default": "./diary-infra",
-      "label": "Path to clone repo: ",
+      "label": "Path to diary-infra repo: ",
       "name": "infra_path",
       "type": "text"
     },
