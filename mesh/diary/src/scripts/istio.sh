@@ -11,7 +11,7 @@ runIstio() {
         exit 1
     fi
 
-    if $TELEMETRY = "yes"
+    if [ $TELEMETRY = "yes" ]
     then
         kubectl apply istio/gateway.yaml
     fi
