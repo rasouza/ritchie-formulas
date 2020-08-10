@@ -1,0 +1,26 @@
+{
+  "dockerImageBuilder": "cimg/base:stable-20.04",
+  "inputs": [
+    {
+      "cache": {
+        "active": true,
+        "newLabel": "Type new path ",
+        "qty": 6
+      },
+      "default": "./diary-infra",
+      "label": "Path to clone repo: ",
+      "name": "infra_path",
+      "type": "text"
+    },
+    {
+      "default": "yes",
+      "items": [
+        "yes",
+        "no"
+      ],
+      "label": "Do you want to expose telemetry to istio.localhost domain? ",
+      "name": "telemetry",
+      "type": "bool"
+    }
+  ]
+}
