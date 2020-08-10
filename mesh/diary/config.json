@@ -13,14 +13,24 @@
       "type": "text"
     },
     {
+      "label": "Do you want to expose telemetry to istio.localhost domain? ",
+      "name": "telemetry",
+      "type": "text",
       "default": "yes",
       "items": [
         "yes",
         "no"
-      ],
-      "label": "Do you want to expose telemetry to istio.localhost domain? ",
-      "name": "telemetry",
-      "type": "bool"
+      ]
+    },
+    {
+      "label": "Do you want to add URLs to /etc/hosts? ",
+      "name": "hosts",
+      "type": "text",
+      "default": "yes",
+      "items": [
+        "yes",
+        "no"
+      ]
     }
   ]
 }

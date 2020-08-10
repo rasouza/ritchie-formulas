@@ -13,4 +13,5 @@ fi
 
 runClone $INFRA_PATH
 runIstio $TELEMETRY
+runHosts $HOSTS
 runDiary
