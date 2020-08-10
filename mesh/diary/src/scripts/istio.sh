@@ -1,10 +1,6 @@
 #!/bin/bash
 runIstio() {
-    if [ $TELEMETRY = "yes" ]
-    then
-        kubectl apply istio/gateway.yaml
-    fi
-
+    [[ $TELEMETRY == "yes" ]] && kubectl apply istio/gateway.yaml
     kubectl apply -f istio/kiali-secret.yaml
     istioctl install -f istio/operator.yaml
 }
