@@ -1,4 +1,4 @@
 {
-	"short": "short help placeholder for mesh",
-	"long": "long help placeholder for mesh used by index page and -h"
+	"short": "Istio Service Mesh commands",
+	"long": "Istio Service Mesh commands"
 }

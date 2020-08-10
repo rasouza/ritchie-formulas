@@ -1,4 +1,4 @@
 {
-	"short": "short help placeholder for init",
-	"long": "long help placeholder for init used by index page and -h"
+	"short": "Installs Istio dependencies",
+	"long": "Installs istioctl, kustomize and minikube"
 }
