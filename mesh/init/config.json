@@ -12,6 +12,16 @@
       "type": "text"
     },
     {
+      "label": "Do you wish to configure minikube? ",
+      "name": "minikube_config",
+      "default": "no",
+      "items": [
+        "no",
+        "yes"
+      ],
+      "type": "text"
+    },
+    {
       "label": "Do you wish to install istioctl? ",
       "name": "istioctl",
       "default": "no",

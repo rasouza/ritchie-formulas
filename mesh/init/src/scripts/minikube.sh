@@ -15,3 +15,17 @@ runMinikube() {
     echo "Skipping Minikube installation..."
   fi
 }
+
+runMinikubeConfig() {
+  if [[ $1 == "yes" ]]; then
+    echo "Configuring Minikube..."
+    minikube start --memory=8192mb --cpus=2
+    echo "Your minikube IP is: $(minikube ip)"
+    echo "Choose an IP range to use with metallb"
+    minikube addons configure metallb
+    minikube addons enable metallb
+    minikube addons enable olm
+  else
+    echo "Skipping Minikube configuration..."
+  fi
+}

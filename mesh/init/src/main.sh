@@ -7,5 +7,6 @@
 #In sh for receive inputs of CLI use: $SAMPLE_TEXT, $SAMPLE_LIST and $SAMPLE_BOOL for this example
 
 runMinikube $MINIKUBE
+runMinikubeConfig $MINIKUBE_CONFIG
 runIstio $ISTIOCTL
 runKustomize $KUSTOMIZE
