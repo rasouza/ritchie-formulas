@@ -1,4 +1,5 @@
 #!/bin/bash
 runDiary() {
-    kustomize build .. | kubectl apply -f -
+    pwd
+    kustomize build . | kubectl apply -f -
 }
