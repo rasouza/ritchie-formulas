@@ -1,0 +1,35 @@
+{
+  "dockerImageBuilder": "cimg/base:stable-20.04",
+  "inputs": [
+    {
+      "label": "Do you wish to install minikube? ",
+      "name": "minikube",
+      "default": "no",
+      "items": [
+        "no",
+        "yes"
+      ],
+      "type": "bool"
+    },
+    {
+      "label": "Do you wish to install istioctl? ",
+      "name": "istioctl",
+      "default": "no",
+      "items": [
+        "no",
+        "yes"
+      ],
+      "type": "bool"
+    },
+    {
+      "label": "Do you wish to install kustomize? ",
+      "name": "kustomize",
+      "default": "no",
+      "items": [
+        "no",
+        "yes"
+      ],
+      "type": "bool"
+    }
+  ]
+}
