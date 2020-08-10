@@ -1,12 +1,13 @@
 #!/bin/bash
 runMinikube() {
-  if [ $1 = "yes" ]; then
+  if [[ $1 == "yes" ]]; then
     echo "Installing Minikube..."
-    if [ $(uname -s) = "Darwin" ]
-    then
+
+    if [[ "$OSTYPE" == linux* ]]; then
+      curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+      sudo install minikube-linux-amd64 /usr/local/bin/minikube
+    elif [[ "$OSTYPE" == darwin* ]]; then
       brew install minikube
-    elif [ $(uname -s) = "Linux" ]
-      MINIKUBE_URL="https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64" 
     else
       choco install minikube
     fi

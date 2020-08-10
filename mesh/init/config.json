@@ -9,7 +9,7 @@
         "no",
         "yes"
       ],
-      "type": "bool"
+      "type": "text"
     },
     {
       "label": "Do you wish to install istioctl? ",
@@ -19,7 +19,7 @@
         "no",
         "yes"
       ],
-      "type": "bool"
+      "type": "text"
     },
     {
       "label": "Do you wish to install kustomize? ",
@@ -29,7 +29,7 @@
         "no",
         "yes"
       ],
-      "type": "bool"
+      "type": "text"
     }
   ]
 }
