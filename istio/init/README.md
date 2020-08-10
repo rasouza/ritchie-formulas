@@ -15,7 +15,7 @@ Installs **latest** `istioctl`, `kustomize` and `minikube` dependencies in order
 
 In order to run Istio, your k8s cluster needs to support some extra features that minikube delivers in a easy and configurable way. 
 
-`minikube` starts a cluster with `8GB` RAM and `4` CPUs and **3rd party service account token** configured
+`minikube` starts a cluster with `8GB` RAM and `4` CPUs and **3rd party service account token** configured (see [Istio Security Best Practices](https://istio.io/latest/docs/ops/best-practices/security/))
 
 #### LoadBalancer IP
 
@@ -26,4 +26,4 @@ If your `minikube ip`  is `192.168.64.1` you can set the IP range to `192.168.64
 
 ### Istioctl
 
-`istioctl` uses the Operator pattern to install istio
+`istioctl` uses the Operator pattern to install `istio`
