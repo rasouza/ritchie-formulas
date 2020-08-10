@@ -20,8 +20,8 @@ runMinikubeConfig() {
   if [[ $1 == "yes" ]]; then
     echo "Configuring Minikube..."
     minikube start --memory=8192mb --cpus=2 \
-      --extra-config=apiserver.service-account-signing-key-file=/var/lib/minikube/certs/apiserver.key \
-      --extra-config=apiserver.service-account-issuer=api \
+      --extra-config=apiserver.service-account-signing-key-file=/var/lib/minikube/certs/sa.key \
+      --extra-config=apiserver.service-account-issuer=kubernetes/serviceaccount \
       --extra-config=apiserver.service-account-api-audiences=api
     echo "Your minikube IP is: $(minikube ip)"
     echo "Choose a free IP range to use with metallb"
