@@ -17,18 +17,14 @@ runMinikube() {
 }
 
 runMinikubeConfig() {
-  if [[ $1 == "yes" ]]; then
-    echo "Configuring Minikube..."
-    minikube start --memory=8192mb --cpus=2 \
-      --extra-config=apiserver.service-account-signing-key-file=/var/lib/minikube/certs/sa.key \
-      --extra-config=apiserver.service-account-issuer=kubernetes/serviceaccount \
-      --extra-config=apiserver.service-account-api-audiences=api
-    echo "Your minikube IP is: $(minikube ip)"
-    echo "Choose a free IP range to use with metallb"
-    minikube addons configure metallb
-    minikube addons enable metallb
-    minikube addons enable olm
-  else
-    echo "Skipping Minikube configuration..."
-  fi
+  echo "Configuring Minikube..."
+  minikube start --memory=8192mb --cpus=4 \
+    --extra-config=apiserver.service-account-signing-key-file=/var/lib/minikube/certs/sa.key \
+    --extra-config=apiserver.service-account-issuer=kubernetes/serviceaccount \
+    --extra-config=apiserver.service-account-api-audiences=api
+  echo "Your minikube IP is: $(minikube ip)"
+  echo "Choose a free IP range to use with metallb"
+  minikube addons configure metallb
+  minikube addons enable metallb
+  minikube addons enable olm
 }
