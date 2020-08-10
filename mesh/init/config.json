@@ -30,6 +30,16 @@
         "yes"
       ],
       "type": "text"
+    },
+    {
+      "label": "Do you wish to install Diary components? ",
+      "name": "diary",
+      "default": "no",
+      "items": [
+        "no",
+        "yes"
+      ],
+      "type": "text"
     }
   ]
 }
