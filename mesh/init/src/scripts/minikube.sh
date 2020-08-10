@@ -24,7 +24,7 @@ runMinikubeConfig() {
       --extra-config=apiserver.service-account-issuer=api \
       --extra-config=apiserver.service-account-api-audiences=api
     echo "Your minikube IP is: $(minikube ip)"
-    echo "Choose an IP range to use with metallb"
+    echo "Choose a free IP range to use with metallb"
     minikube addons configure metallb
     minikube addons enable metallb
     minikube addons enable olm
